@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<div class="contenitore stretto">
+  <article class="pagina">
+    <p class="scheda-meta">
+      <a href="{{ '/news/' | relative_url }}">← News & resoconti</a> ·
+      {% include data.html d=page.date %}
+      {% if page.categories contains "resoconti" %}<span class="etichetta">Resoconto</span>{% endif %}
+    </p>
+    <h1>{{ page.title }}</h1>
+    {% if page.sottotitolo %}<p class="sottotitolo">{{ page.sottotitolo | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+    {% if page.autore %}<p class="autore">Resoconto di {{ page.autore }}</p>{% endif %}
+    {{ content }}
+    {% if page.originale %}
+    <p class="nota">Testo da completare con la migrazione. Nel frattempo è consultabile la <a href="{{ page.originale }}">versione sul sito attuale</a>.</p>
+    {% endif %}
+  </article>
+</div>

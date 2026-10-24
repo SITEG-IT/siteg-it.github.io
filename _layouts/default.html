@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,600;0,700;1,400&family=Alegreya+SC:wght@500;700&family=Alegreya+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ '/assets/css/stile.css' | relative_url }}">
+  {% seo %}
+  {% feed_meta %}
+</head>
+<body>
+  <a class="salta" href="#contenuto">Vai al contenuto</a>
+  <header class="testata">
+    <div class="contenitore testata-riga">
+      <a class="marchio" href="{{ '/' | relative_url }}">
+        <span class="marchio-nome">ΣΙΤΕΓ</span>
+        <span class="marchio-testo"><strong>SITEG</strong><br>Sito Italiano di Epigrafia Greca</span>
+      </a>
+      <nav class="menu" aria-label="Menu principale">
+          <ul>
+            {% for voce in site.data.menu %}
+            {%- assign attivo = false -%}
+            {%- assign inizio = page.url | slice: 0, voce.url.size -%}
+            {%- if inizio == voce.url -%}{%- assign attivo = true -%}{%- endif -%}
+            <li><a href="{{ voce.url | relative_url }}"{% if attivo %} aria-current="page"{% endif %}>{{ voce.titolo }}</a></li>
+            {% endfor %}
+          </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenuto">
+    {{ content }}
+  </main>
+
+  <footer class="piede">
+    <div class="contenitore piede-griglia">
+      <div>
+        <p class="piede-titolo">SITEG – Sito Italiano di Epigrafia Greca</p>
+        <p>{{ site.contatti.indirizzo }}<br>
+        {{ site.contatti.telefono }} · <a href="mailto:{{ site.contatti.email }}">{{ site.contatti.email }}</a></p>
+      </div>
+      <div class="piede-destra">
+        <p><a href="{{ '/condizioni-di-utilizzo/' | relative_url }}">Condizioni di utilizzo</a> · <a href="{{ '/news/feed.xml' | relative_url }}">Feed RSS</a></p>
+        <p>© {{ 'now' | date: '%Y' }} SITEG</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

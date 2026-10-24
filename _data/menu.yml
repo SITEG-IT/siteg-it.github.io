@@ -1,0 +1,13 @@
+# Menu principale. Per aggiungere una voce, copia una riga e cambia titolo e indirizzo.
+- titolo: Chi siamo
+  url: /chi-siamo/
+- titolo: News & resoconti
+  url: /news/
+- titolo: Corsi
+  url: /corsi/
+- titolo: Link
+  url: /link/
+- titolo: Partecipa
+  url: /partecipa/
+- titolo: Contatti
+  url: /contatti/

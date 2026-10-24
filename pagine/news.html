@@ -1,0 +1,15 @@
+---
+title: News & resoconti
+permalink: /news/
+redirect_from:
+  - /index.php/news/index/
+---
+<p class="filtri">Convegni, seminari, bandi e resoconti, dal più recente. <a href="{{ '/news/feed.xml' | relative_url }}">Feed RSS</a></p>
+
+{% assign per_anno = site.posts | group_by_exp: "p", "p.date | date: '%Y'" %}
+{% for gruppo in per_anno %}
+  <h2 class="anno">{{ gruppo.name }}</h2>
+  {% for post in gruppo.items %}
+    {% include scheda-news.html post=post %}
+  {% endfor %}
+{% endfor %}

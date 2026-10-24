@@ -1,0 +1,45 @@
+title: SITEG
+subtitle: Sito Italiano di Epigrafia Greca
+description: >-
+  Luogo di incontro per chi studia l'epigrafia greca in Italia: notizie,
+  convegni, seminari, corsi e risorse.
+lang: it
+locale: it_IT
+
+# Quando il dominio siteg.it punterà a GitHub Pages:
+#   url: "https://www.siteg.it"
+url: ""
+baseurl: ""
+
+contatti:
+  email: info@siteg.it
+  indirizzo: "Dipartimento di Storia Antica, via Zamboni 38 – 40126 Bologna"
+  telefono: "+39 051 2098391"
+
+permalink: /news/:year/:title/
+timezone: Europe/Rome
+
+markdown: kramdown
+kramdown:
+  input: GFM
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+feed:
+  path: news/feed.xml
+
+defaults:
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+  - scope: { path: "" }
+    values: { layout: page }
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor

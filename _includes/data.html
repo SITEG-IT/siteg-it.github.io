@@ -1,0 +1,2 @@
+{%- assign m = include.d | date: "%-m" | minus: 1 -%}
+<time datetime="{{ include.d | date: '%Y-%m-%d' }}">{{ include.d | date: "%-d" }} {{ site.data.mesi[m] }} {{ include.d | date: "%Y" }}</time>

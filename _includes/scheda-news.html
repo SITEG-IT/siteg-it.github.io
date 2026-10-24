@@ -1,0 +1,8 @@
+<article class="scheda">
+  <p class="scheda-meta">
+    {% include data.html d=include.post.date %}
+    {% if include.post.categories contains "resoconti" %}<span class="etichetta">Resoconto</span>{% endif %}
+  </p>
+  <h3><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h3>
+  {% if include.post.sottotitolo %}<p class="scheda-sotto">{{ include.post.sottotitolo | markdownify | remove: '<p>' | remove: '</p>' }}</p>{% endif %}
+</article>

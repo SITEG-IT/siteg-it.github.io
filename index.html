@@ -1,0 +1,40 @@
+---
+layout: default
+title: Home
+---
+<section class="apertura">
+  <div class="contenitore">
+    <p class="apertura-greco">Sito Italiano di Epigrafia Greca</p>
+    <h1>Un luogo d'incontro per chi studia le iscrizioni greche in Italia</h1>
+    <p>Notizie su convegni, seminari e ricerche in corso, resoconti, corsi universitari e risorse per gli studi di epigrafia greca. Ogni collaborazione, come pure ogni suggerimento anche critico, sarà di grande utilità.</p>
+    <p>
+      <a class="bottone" href="{{ '/news/' | relative_url }}">Tutte le news</a>
+      <a class="bottone secondario" href="{{ '/partecipa/' | relative_url }}">Segnala un evento</a>
+    </p>
+  </div>
+</section>
+
+<div class="contenitore home-griglia">
+  <section aria-labelledby="t-news">
+    <h2 class="sezione-titolo" id="t-news">Ultime news</h2>
+    {% assign news = site.posts | where_exp: "p", "p.categories contains 'news'" %}
+    {% for post in news limit:6 %}
+      {% include scheda-news.html post=post %}
+    {% endfor %}
+    <p><a href="{{ '/news/' | relative_url }}">Archivio completo →</a></p>
+  </section>
+
+  <aside>
+    <h2 class="sezione-titolo">Resoconti</h2>
+    {% assign resoconti = site.posts | where_exp: "p", "p.categories contains 'resoconti'" %}
+    {% for post in resoconti limit:3 %}
+      {% include scheda-news.html post=post %}
+    {% endfor %}
+
+    <div class="riquadro" style="margin-top:2rem">
+      <h2>Perché SITEG</h2>
+      <p>Facilitare la diffusione delle ricerche di epigrafia greca e moltiplicare le occasioni di discussione e confronto, anche fuori dall'ambiente accademico.</p>
+      <a href="{{ '/chi-siamo/' | relative_url }}">Chi siamo →</a>
+    </div>
+  </aside>
+</div>
