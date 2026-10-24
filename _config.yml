@@ -17,7 +17,7 @@ anteprima: true
 
 contatti:
   email: info@siteg.it
-  indirizzo: "Dipartimento di Storia Antica, via Zamboni 38 – 40126 Bologna"
+  indirizzo: "Dipartimento di Storia Culture Civiltà – sez. Storia Antica, via Zamboni 38 – 40126 Bologna"
   telefono: "+39 051 2098391"
 
 permalink: /news/:year/:title/

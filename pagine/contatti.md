@@ -7,7 +7,7 @@ redirect_from:
 ---
 
 **SITEG – Sito Italiano di Epigrafia Greca**  
-Dipartimento di Storia Antica  
+Dipartimento di Storia Culture Civiltà – sez. Storia Antica  
 via Zamboni 38 – 40126 Bologna  
 Tel. +39 051 2098391
 
