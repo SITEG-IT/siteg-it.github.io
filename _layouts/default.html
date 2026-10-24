@@ -9,9 +9,15 @@
   <link rel="stylesheet" href="{{ '/assets/css/stile.css' | relative_url }}">
   {% seo %}
   {% feed_meta %}
+  {% if site.anteprima %}<meta name="robots" content="noindex, nofollow">{% endif %}
 </head>
 <body>
   <a class="salta" href="#contenuto">Vai al contenuto</a>
+  {% if site.anteprima %}
+  <div class="anteprima"><div class="contenitore">
+    <strong>Anteprima del nuovo SITEG.</strong> Il sito è in costruzione: alcune news riportano per ora solo titolo e link alla versione completa su <a href="https://www.siteg.it">siteg.it</a>. Commenti e segnalazioni a <a href="mailto:{{ site.contatti.email }}">{{ site.contatti.email }}</a>.
+  </div></div>
+  {% endif %}
   <header class="testata">
     <div class="contenitore testata-riga">
       <a class="marchio" href="{{ '/' | relative_url }}">

@@ -11,6 +11,10 @@ locale: it_IT
 url: ""
 baseurl: ""
 
+# Anteprima: mostra l'avviso in cima alle pagine e chiede a Google di non indicizzare.
+# Al passaggio definitivo su siteg.it impostare: anteprima: false
+anteprima: true
+
 contatti:
   email: info@siteg.it
   indirizzo: "Dipartimento di Storia Antica, via Zamboni 38 – 40126 Bologna"

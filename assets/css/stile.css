@@ -97,3 +97,7 @@ img { max-width: 100%; height: auto; }
 .piede-titolo { font: 700 1rem var(--maiuscoletto); letter-spacing: .05em; color: #fff; }
 .piede-destra { text-align: right; }
 @media (max-width: 40rem) { .piede-destra { text-align: left; } }
+
+/* Avviso di anteprima (si attiva con anteprima: true in _config.yml) */
+.anteprima { background: #f3d9b1; color: var(--inchiostro); font: .95rem/1.45 var(--sans); padding: .6rem 0; border-bottom: 1px solid #e2c193; }
+.anteprima a { color: var(--cotto-scuro); }
