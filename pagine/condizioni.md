@@ -1,5 +1,6 @@
 ---
 title: Condizioni di utilizzo
+immagine: /assets/img/domitia.jpg
 permalink: /condizioni-di-utilizzo/
 redirect_from:
   - /index.php/pages/view/condizioni-di-utilizzo/

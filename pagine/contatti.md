@@ -1,5 +1,6 @@
 ---
 title: Contatti
+immagine: /assets/img/blocco.jpg
 permalink: /contatti/
 redirect_from:
   - /index.php/pages/view/contatti/

@@ -1,6 +1,7 @@
 ---
 title: Partecipa
 sottotitolo: Come segnalare eventi, ricerche e pubblicazioni
+immagine: /assets/img/lenaia.jpg
 permalink: /partecipa/
 redirect_from:
   - /index.php/pages/view/area-riservata/

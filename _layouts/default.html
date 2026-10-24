@@ -19,12 +19,11 @@
   </div></div>
   {% endif %}
   <header class="testata">
-    <div class="contenitore testata-riga">
-      <a class="marchio" href="{{ '/' | relative_url }}">
-        <span class="marchio-nome">ΣΙΤΕΓ</span>
-        <span class="marchio-testo"><strong>SITEG</strong><br>Sito Italiano di Epigrafia Greca</span>
-      </a>
-      <nav class="menu" aria-label="Menu principale">
+    <a class="testata-logo" href="{{ '/' | relative_url }}" style="background-image:url('{{ '/assets/img/testata.jpg' | relative_url }}')">
+      <span class="nascosto">SITEG – Sito Italiano di Epigrafia Greca</span>
+    </a>
+    <nav class="menu" aria-label="Menu principale">
+      <div class="contenitore">
           <ul>
             {% for voce in site.data.menu %}
             {%- assign attivo = false -%}
@@ -33,8 +32,8 @@
             <li><a href="{{ voce.url | relative_url }}"{% if attivo %} aria-current="page"{% endif %}>{{ voce.titolo }}</a></li>
             {% endfor %}
           </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
   <main id="contenuto">

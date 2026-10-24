@@ -1,5 +1,6 @@
 ---
 title: Chi siamo
+immagine: /assets/img/domitia.jpg
 permalink: /chi-siamo/
 redirect_from:
   - /index.php/pages/view/perch-siteg/

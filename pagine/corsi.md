@@ -1,5 +1,6 @@
 ---
 title: Corsi di epigrafia greca in Italia
+immagine: /assets/img/stele.jpg
 permalink: /corsi/
 redirect_from:
   - /index.php/pages/view/corsi/

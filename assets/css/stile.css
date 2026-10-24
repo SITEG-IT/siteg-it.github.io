@@ -1,13 +1,15 @@
 /* SITEG – foglio di stile. I colori principali sono qui sotto. */
 :root {
-  --carta: #f7f3ec;
-  --carta-2: #efe8dc;
-  --inchiostro: #23201c;
-  --grigio: #6b6359;
-  --linea: #ddd3c3;
-  --cotto: #9a3d24;      /* colore d'accento: terracotta */
-  --cotto-scuro: #7a2f1b;
-  --bianco: #fffdf9;
+  /* Colori ripresi dalla testata originale di SITEG */
+  --carta: #ffffff;
+  --carta-2: #eef2f8;
+  --inchiostro: #222222;
+  --grigio: #5c6470;
+  --linea: #d8dee8;
+  --cotto: #3e5a8a;      /* colore d'accento: blu SITEG */
+  --cotto-scuro: #2c4268;
+  --bianco: #ffffff;
+  --barra: #333333;      /* barra scura del menu */
   --serif: "Alegreya", Georgia, serif;
   --maiuscoletto: "Alegreya SC", Georgia, serif;
   --sans: "Alegreya Sans", system-ui, sans-serif;
@@ -34,25 +36,33 @@ img { max-width: 100%; height: auto; }
 .stretto { max-width: 46rem; }
 
 /* Testata */
-.testata { background: var(--bianco); border-bottom: 1px solid var(--linea); }
-.testata-riga { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 2rem; padding-top: 1rem; padding-bottom: 1rem; }
-.marchio { display: flex; align-items: center; gap: .85rem; text-decoration: none; color: var(--inchiostro); }
-.marchio-nome {
-  font: 700 1.35rem/1 var(--serif); letter-spacing: .12em;
-  color: var(--bianco); background: var(--cotto);
-  padding: .55rem .6rem .5rem .75rem; border-radius: 2px;
+.nascosto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.testata-logo {
+  display: block; height: 111px;
+  background-color: #476395; background-repeat: no-repeat; background-position: 50% 0;
 }
-.marchio-testo { font: .95rem/1.25 var(--sans); color: var(--grigio); }
-.marchio-testo strong { font: 700 1.1rem/1.2 var(--maiuscoletto); color: var(--inchiostro); letter-spacing: .04em; }
+@media (max-width: 56rem) {
+  .testata-logo { height: 80px; background-size: auto 80px; background-position: 35% 0; }
+}
+.menu { background: var(--barra); border-bottom: 3px solid #d5d5d5; }
+.menu ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; justify-content: center; }
+.menu a { display: block; font: 500 1rem/1.4 var(--sans); color: #f2f2f2; text-decoration: none; padding: .45rem .8rem; }
+.menu a:hover { background: #474747; color: #fff; }
+.menu a[aria-current="page"] { background: var(--cotto); color: #fff; }
 
-.menu ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
-.menu a { font: 500 1rem/1.4 var(--sans); color: var(--inchiostro); text-decoration: none; padding: .25rem 0; border-bottom: 2px solid transparent; }
-.menu a:hover { color: var(--cotto); }
-.menu a[aria-current="page"] { border-bottom-color: var(--cotto); }
+/* Immagini di epigrafi, come nel sito originale */
+.figura { margin: 0 0 1.5rem; }
+.figura img { display: block; width: 100%; border: 1px solid var(--linea); }
+.con-figura { display: grid; grid-template-columns: minmax(0, 1fr) 15rem; gap: 2.5rem; align-items: start; }
+.con-figura .figura { margin-top: 3rem; }
+@media (max-width: 52rem) { .con-figura { grid-template-columns: 1fr; gap: 0; } .con-figura .figura { display: none; } }
 
 /* Home */
 .apertura { background: var(--carta-2); border-bottom: 1px solid var(--linea); }
-.apertura .contenitore { padding-top: 3rem; padding-bottom: 3rem; }
+.apertura .contenitore { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.apertura-griglia { display: grid; grid-template-columns: minmax(0, 1fr) 20rem; gap: 2.5rem; align-items: center; }
+.apertura-griglia .figura { margin: 0; }
+@media (max-width: 52rem) { .apertura-griglia { grid-template-columns: 1fr; gap: 1.5rem; } }
 .apertura-greco { font: italic 400 1.1rem/1.4 var(--serif); color: var(--cotto); margin: 0 0 .5rem; }
 .apertura h1 { font: 700 clamp(2rem, 5vw, 3.1rem)/1.1 var(--serif); margin: 0 0 1rem; max-width: 22ch; }
 .apertura p { max-width: 40rem; margin: 0 0 1rem; }
@@ -90,8 +100,8 @@ img { max-width: 100%; height: auto; }
 .filtri { font: .95rem var(--sans); }
 
 /* Piede */
-.piede { background: var(--inchiostro); color: #d8d0c4; font: .95rem/1.5 var(--sans); }
-.piede a { color: #f0c9b8; }
+.piede { background: var(--barra); color: #d6d6d6; font: .95rem/1.5 var(--sans); }
+.piede a { color: #b9cbec; }
 .piede-griglia { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem 3rem; padding-top: 2rem; padding-bottom: 2rem; }
 .piede p { margin: 0 0 .4rem; }
 .piede-titolo { font: 700 1rem var(--maiuscoletto); letter-spacing: .05em; color: #fff; }
@@ -99,5 +109,5 @@ img { max-width: 100%; height: auto; }
 @media (max-width: 40rem) { .piede-destra { text-align: left; } }
 
 /* Avviso di anteprima (si attiva con anteprima: true in _config.yml) */
-.anteprima { background: #f3d9b1; color: var(--inchiostro); font: .95rem/1.45 var(--sans); padding: .6rem 0; border-bottom: 1px solid #e2c193; }
+.anteprima { background: #fff4cc; color: var(--inchiostro); font: .95rem/1.45 var(--sans); padding: .6rem 0; border-bottom: 1px solid #ecd98c; }
 .anteprima a { color: var(--cotto-scuro); }

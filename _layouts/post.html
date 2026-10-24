@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-<div class="contenitore stretto">
+<div class="contenitore">
+  <div class="con-figura">
   <article class="pagina">
     <p class="scheda-meta">
       <a href="{{ '/news/' | relative_url }}">← News & resoconti</a> ·
@@ -16,4 +17,6 @@ layout: default
     <p class="nota">Testo da completare con la migrazione. Nel frattempo è consultabile la <a href="{{ page.originale }}">versione sul sito attuale</a>.</p>
     {% endif %}
   </article>
+  <figure class="figura"><img src="{{ page.immagine | default: '/assets/img/stele.jpg' | relative_url }}" alt=""></figure>
+  </div>
 </div>

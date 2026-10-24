@@ -1,5 +1,6 @@
 ---
 title: Link utili
+immagine: /assets/img/fascia.jpg
 permalink: /link/
 redirect_from:
   - /index.php/pages/view/link/

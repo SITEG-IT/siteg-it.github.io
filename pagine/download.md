@@ -1,6 +1,7 @@
 ---
 title: Download
 sottotitolo: Documenti, programmi e contributi
+immagine: /assets/img/blocco.jpg
 permalink: /download/
 redirect_from:
   - /index.php/documents/index/1/
