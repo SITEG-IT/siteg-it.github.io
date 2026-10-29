@@ -9,6 +9,13 @@ redirect_from:
   - /index.php/users/register/
 ---
 
+## Ricevi le news
+
+Puoi essere avvisato a ogni nuova notizia pubblicata su SITEG in due modi:
+
+1. **con un lettore di feed** (ad esempio Feedly, Inoreader o il lettore integrato nel programma di posta), aggiungendo l'indirizzo del nostro [feed delle news (Atom)]({{ '/news/feed.xml' | absolute_url }}): `{{ '/news/feed.xml' | absolute_url }}`;
+2. **per email**, iscrivendoti con un servizio gratuito come [Blogtrottr](https://blogtrottr.com/): incolla l'indirizzo del feed, inserisci la tua email e scegli se ricevere ogni notizia subito o un riepilogo giornaliero.
+
 ## Segnala un evento o una ricerca in corso
 
 Convegni, seminari, giornate di studio, bandi e ricerche in corso: scrivi a [info@siteg.it](mailto:info@siteg.it) con titolo, luogo, date, un breve testo ed eventualmente la locandina in PDF o immagine. La redazione pubblicherà la notizia nella sezione [News & resoconti](/news/).
