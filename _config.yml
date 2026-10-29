@@ -8,7 +8,7 @@ locale: it_IT
 
 # Quando il dominio siteg.it punterà a GitHub Pages:
 #   url: "https://www.siteg.it"
-url: ""
+url: "https://siteg-it.github.io"   # al passaggio definitivo: "https://www.siteg.it"
 baseurl: ""
 
 # Anteprima: mostra l'avviso in cima alle pagine e chiede a Google di non indicizzare.
