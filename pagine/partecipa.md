@@ -11,10 +11,22 @@ redirect_from:
 
 ## Ricevi le news
 
-Puoi essere avvisato a ogni nuova notizia pubblicata su SITEG in due modi:
+Vuoi sapere quando SITEG pubblica una nuova notizia, senza dover tornare ogni volta sul sito? Puoi riceverla direttamente nella tua casella di posta. È gratuito e richiede un paio di minuti.
 
-1. **con un lettore di feed** (ad esempio Feedly, Inoreader o il lettore integrato nel programma di posta), aggiungendo l'indirizzo del nostro [feed delle news (Atom)]({{ '/news/feed.xml' | absolute_url }}): `{{ '/news/feed.xml' | absolute_url }}`;
-2. **per email**, iscrivendoti con un servizio gratuito come [Blogtrottr](https://blogtrottr.com/): incolla l'indirizzo del feed, inserisci la tua email e scegli se ricevere ogni notizia subito o un riepilogo giornaliero.
+### Ricevere le notizie per email
+
+1. Copia questo indirizzo, che contiene l'elenco sempre aggiornato delle nostre notizie:  
+   **`{{ '/news/feed.xml' | absolute_url }}`**
+2. Apri il sito gratuito [Blogtrottr](https://blogtrottr.com/), un servizio che controlla le notizie al posto tuo e te le manda per email.
+3. Nel primo campo incolla l'indirizzo che hai copiato; nel secondo scrivi la tua email.
+4. Scegli ogni quanto ricevere i messaggi: subito a ogni notizia, oppure un riassunto una volta al giorno.
+5. Conferma l'iscrizione cliccando il link nella mail che Blogtrottr ti invierà.
+
+Da quel momento riceverai un'email per ogni nuova notizia di SITEG. Per smettere basta cliccare il link di cancellazione in fondo a una qualsiasi di queste email.
+
+### Per chi usa già un lettore di notizie
+
+Se usi un'app che raccoglie le novità da più siti (come Feedly o Inoreader), aggiungi lo stesso indirizzo: le notizie di SITEG compariranno lì insieme alle altre.
 
 ## Segnala un evento o una ricerca in corso
 
