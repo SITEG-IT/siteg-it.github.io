@@ -16,3 +16,5 @@ Sala Stemmi, Scuola Normale Superiore, Palazzo della Carovana, Piazza dei Cavali
 È possibile seguire l'incontro anche da remoto, su Teams: il link e tutte le informazioni sono sulla [pagina dell'evento della Scuola Normale](https://www.sns.it/it/evento/presentazione-del-volume-sharing-polis-citizenship-and-forms-civic-participation-greek-world).
 
 Per informazioni: [eventiculturali@sns.it](mailto:eventiculturali@sns.it), [anna.magnetto@sns.it](mailto:anna.magnetto@sns.it)
+
+[![Locandina della presentazione](/assets/file/2026-11-06-sharing-in-the-polis-locandina.jpg)](/assets/file/2026-11-06-sharing-in-the-polis-locandina.jpg)
